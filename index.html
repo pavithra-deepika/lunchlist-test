@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lunch-list</title>
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <div>
+                <label for="">Lunch Name</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="">Ingredient1</label>
+                <input type="text" id="ingredient1">
+            </div>
+            <div>
+                <label for="">Ingredient2</label>
+                <input type="text" id="ingredient2">
+            </div>
+        </div>
+        <div>
+            <button id="submitBtn" onclick="addData()">Add</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Ingredient1</th>
+                    <th>Ingredient2</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
