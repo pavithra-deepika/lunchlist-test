@@ -67,7 +67,7 @@ function clearData() {
 
 // Add Function
 
-function addData() {
+function addEditData() {
     let name = document.getElementById("name").value;
     let firstIng = document.getElementById("ingredient1").value;
     let secondIng = document.getElementById("ingredient2").value;
