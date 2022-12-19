@@ -19,7 +19,7 @@ let lunchList = [
 
 // Show Function
 
-let tableBodyElement = document.getElementById("table");
+let tableBodyElement = document.getElementById("tableBody");
 
 let currentIndex = -1;
 
@@ -87,7 +87,7 @@ function addEditData() {
         clearData();
     } 
     else {
-        window.alert('enter all details')
+        window.alert('Enter all details')
     }
 
 }
@@ -120,5 +120,7 @@ function getRandomInt(max) {
 function randomData() {
  randomIdx = getRandomInt(lunchList.length);
 
- document.getElementById("randomOne").innerHTML=lunchList[randomIdx].Name;
+ document.getElementById("firstData").innerHTML=lunchList[randomIdx].Name;
+ document.getElementById("secondData").innerHTML=lunchList[randomIdx].Ingredient1;
+ document.getElementById("thirdData").innerHTML=lunchList[randomIdx].Ingredient2;
 }
