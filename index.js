@@ -25,7 +25,7 @@ let currentIndex = -1;
 
 function showLunchlist(item) {
     let trElement = document.createElement("tr")
-
+    trElement.className='my-2'
     output = `
       <td>${item.Name}</td>
       <td>${item.Ingredient1}</td>
@@ -34,10 +34,12 @@ function showLunchlist(item) {
 
     let editBtn = document.createElement("button")
     editBtn.innerHTML = "Edit"
+    editBtn.className = 'btn btn-success add-btn'
     editBtn.onclick = () => editLunch(item);
 
     let deleteBtn = document.createElement("button");
     deleteBtn.innerHTML = "Delete"
+    deleteBtn.className = 'btn btn-danger add-btn'
     deleteBtn.onclick = () => deleteLunch(item);
 
     trElement.innerHTML += output
