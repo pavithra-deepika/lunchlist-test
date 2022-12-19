@@ -110,3 +110,15 @@ function deleteLunch(item) {
     lunchList.splice(currentIndex, 1);
     showData();
 }
+
+// Random Function
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
+function randomData() {
+ randomIdx = getRandomInt(lunchList.length);
+
+ document.getElementById("randomOne").innerHTML=lunchList[randomIdx].Name;
+}
